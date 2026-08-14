@@ -20,6 +20,34 @@ In plain terms: most tools tell you what your agent *did*, after the fact. Warra
 the agent and the action, like a permission slip that has to be countersigned before anything
 happens. The receipts book it keeps cannot be quietly rewritten.
 
+## How it works
+
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Authorize as warrant-authorize
+    participant Human as Human reviewer
+    participant Guard as warrant-guard
+    participant Ledger as Append-only ledger
+
+    Agent->>Authorize: requestAuthority(ActionRequest)
+    Authorize->>Ledger: warrant.requested, policy.evaluated
+    alt policy says auto
+        Authorize-->>Agent: signed warrant
+    else policy says human
+        Authorize->>Human: review request (via the Gate port)
+        Human-->>Authorize: approve / edit / reject (attested human session)
+        Authorize->>Ledger: review.decided, warrant.issued
+        Authorize-->>Agent: signed warrant, bound to the reviewed bytes
+    end
+    Agent->>Guard: guardedExecute(warrant, params)
+    Guard->>Guard: verify signature, recompute paramsHash, compare
+    Guard->>Ledger: action.executed (nonce spent, single use)
+    Guard-->>Agent: effect runs, outcome recorded
+```
+
+Every hop lands in the ledger, and the whole chain exports as one signed certificate.
+
 ## Verify a real certificate first
 
 This repo ships the signed certificate of a production run from August 2026. An AI agent proposed

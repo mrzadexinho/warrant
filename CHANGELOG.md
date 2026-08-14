@@ -4,7 +4,7 @@ What changed and when it shipped. The clock starts at the first public release: 
 carried by the repository itself (the code, the tests, the signed ceremony artifacts), not by
 reconstructed entries nobody could have observed.
 
-## v0.1.0 (date set on the day the repository goes public)
+## v0.1.0 (2026-08-14)
 
 Warrant is public.
 
