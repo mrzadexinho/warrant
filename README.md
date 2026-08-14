@@ -143,12 +143,13 @@ Reporting a vulnerability: [`SECURITY.md`](SECURITY.md). Contributing:
 
 ## The system around it
 
-Warrant is the middle of a three-part system: **Millwerk senses** (produces the
+Warrant is the middle of a three-part system:
+**[Millwerk](https://github.com/mrzadexinho/millwerk) senses** (produces the
 `ActionRequest`s), **Warrant authorizes**, **[Gatewerk](https://github.com/gatewerk/gatewerk)
-decides** (the human review surface).
-Public releases of the other two follow this repo; links will land here when they do. Each is
-independently useful. Together they are an operating loop for agents whose actions have
-consequences.
+decides** (the human review surface). All three are public. Each is independently useful.
+Together they are an operating loop for agents whose actions have consequences, and
+[`docs/guides/human-attested-run.md`](docs/guides/human-attested-run.md) walks the whole loop
+on one machine.
 
 ## License
 
