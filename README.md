@@ -80,6 +80,12 @@ No network, no database, no configuration. It runs the full chain: propose, poli
 nonce, execute, outcome. Then it verifies its own ledger chain and writes a proof summary to
 `packages/warrant-eve-outbound-demo/out/proof.md`.
 
+When you want the reviewer to be a real person instead of a simulation, run
+[Gatewerk](https://github.com/gatewerk/gatewerk) locally and `pnpm demo:human`: same
+lifecycle, but the approval happens in a real review UI on your machine, and warrant mints
+only from the station's attestation of an authenticated human session. The walkthrough:
+[`docs/guides/human-attested-run.md`](docs/guides/human-attested-run.md).
+
 ## Toolchain
 
 Node 20 or newer and pnpm 10 or newer (see `engines` and `packageManager` in `package.json`).
@@ -102,7 +108,7 @@ Adapters and demos:
 
 | Package | Owns |
 |---|---|
-| `warrant-gatewerk` | The `Gate` port: how a review reaches a human. Ships a real adapter for Gatewerk (a human-oversight station, public release upcoming) and a deterministic `SimGate` for tests and the demo. Review content crosses as an opaque record; warrant carries it without looking inside. |
+| `warrant-gatewerk` | The `Gate` port: how a review reaches a human. Ships a real adapter for [Gatewerk](https://github.com/gatewerk/gatewerk), the open source review station where agent actions stop and wait for a person, and a deterministic `SimGate` for tests and the demo. Review content crosses as an opaque record; warrant carries it without looking inside. |
 | `warrant-mcp` | Governs MCP tool calls. The tool's handler runs on the *authorized* params, never the caller's original input. |
 | `warrant-eve` | Adapter for the eve agent runtime: park on `human`, wake on the decision, execute under the minted warrant. |
 | `warrant-pack-gtm` | An opinionated policy pack for outbound GTM, as an example of the layer above the kernel. |
@@ -138,7 +144,8 @@ Reporting a vulnerability: [`SECURITY.md`](SECURITY.md). Contributing:
 ## The system around it
 
 Warrant is the middle of a three-part system: **Millwerk senses** (produces the
-`ActionRequest`s), **Warrant authorizes**, **Gatewerk decides** (the human review surface).
+`ActionRequest`s), **Warrant authorizes**, **[Gatewerk](https://github.com/gatewerk/gatewerk)
+decides** (the human review surface).
 Public releases of the other two follow this repo; links will land here when they do. Each is
 independently useful. Together they are an operating loop for agents whose actions have
 consequences.

@@ -24,7 +24,8 @@
     "lint:fix": "biome check --write packages",
     "ceremony": "pnpm --filter @idriszade/warrant-eve-outbound-demo ceremony",
     "demo": "pnpm --filter @idriszade/warrant-eve-outbound-demo demo",
-    "provision:ledger": "node --import tsx/esm packages/warrant-ledger/src/provision-cli.ts"
+    "provision:ledger": "node --import tsx/esm packages/warrant-ledger/src/provision-cli.ts",
+    "demo:human": "pnpm --filter @idriszade/warrant-eve-outbound-demo demo:human"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.14",

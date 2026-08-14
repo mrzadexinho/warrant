@@ -15,7 +15,8 @@
     "typecheck:tests": "tsc -p tsconfig.test.json --noEmit",
     "test": "vitest run",
     "ceremony": "node --import tsx/esm src/ceremony-cli.ts",
-    "demo": "node --import tsx/esm src/demo/run-demo.ts"
+    "demo": "node --import tsx/esm src/demo/run-demo.ts",
+    "demo:human": "node --import tsx/esm src/demo/run-demo-human.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "4.0.23",
