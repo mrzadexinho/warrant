@@ -1,0 +1,111 @@
+{
+  "object": "list",
+  "items": [
+    {
+      "id": "tpl_2f9c41ab",
+      "slug": "invoice-approval",
+      "project_id": "proj_4c2b91af",
+      "name": "Invoice approval",
+      "description": "Finance sign-off on outbound invoices above the auto-pay floor.",
+      "fields": [
+        { "key": "vendor", "label": "Vendor", "type": "text" },
+        { "key": "amount_usd", "label": "Amount (USD)", "type": "number" }
+      ],
+      "actions": [
+        { "value": "approve", "label": "Approve", "style": "primary" },
+        { "value": "reject", "label": "Reject", "style": "danger" }
+      ],
+      "default_priority": "high",
+      "enable_review_links": true,
+      "auto_approve": false,
+      "timeout_seconds": 86400,
+      "timeout_action": "expire",
+      "changes_timeout_hours": null,
+      "instructions": "Reject anything without a matching PO number.",
+      "allow_request_changes": true,
+      "allow_notes": true,
+      "allow_monitoring": false,
+      "default_auth_level": "email_otp",
+      "default_expiry_seconds": 86400,
+      "status": "active",
+      "draft_config": null,
+      "draft_updated_at": null,
+      "chain_config": null,
+      "max_iterations": null,
+      "created_at": "2026-05-02T11:41:09.000Z",
+      "updated_at": "2026-06-18T08:22:54.000Z",
+      "object": "template"
+    },
+    {
+      "id": "tpl_7a1e0033",
+      "slug": "warrant-outbound-email",
+      "project_id": "proj_4c2b91af",
+      "name": "Warrant outbound email",
+      "description": "Human review of every governed outbound email before the drainer sends it.",
+      "fields": [
+        { "key": "to", "label": "To", "type": "text" },
+        { "key": "subject", "label": "Subject", "type": "text" },
+        { "key": "body", "label": "Body", "type": "textarea" }
+      ],
+      "actions": [
+        { "value": "approve", "label": "Send it", "style": "primary" },
+        { "value": "edited", "label": "Edit and send", "style": "secondary" },
+        { "value": "reject", "label": "Do not send", "style": "danger" }
+      ],
+      "default_priority": "normal",
+      "enable_review_links": false,
+      "auto_approve": false,
+      "timeout_seconds": null,
+      "timeout_action": null,
+      "changes_timeout_hours": null,
+      "instructions": "Approve only if the recipient is on the ceremony allowlist.",
+      "allow_request_changes": true,
+      "allow_notes": true,
+      "allow_monitoring": false,
+      "default_auth_level": "public",
+      "default_expiry_seconds": 86400,
+      "status": "active",
+      "draft_config": null,
+      "draft_updated_at": null,
+      "chain_config": null,
+      "max_iterations": null,
+      "created_at": "2026-07-11T14:03:37.000Z",
+      "updated_at": "2026-07-24T09:05:12.000Z",
+      "object": "template"
+    },
+    {
+      "id": "tpl_c40d7b52",
+      "slug": "nightly-digest",
+      "project_id": "proj_4c2b91af",
+      "name": "Nightly digest",
+      "description": "Low-stakes summary that self-approves when nobody objects.",
+      "fields": [{ "key": "summary", "label": "Summary", "type": "textarea" }],
+      "actions": [
+        { "value": "approve", "label": "Acknowledge", "style": "primary" },
+        { "value": "reject", "label": "Hold", "style": "danger" }
+      ],
+      "default_priority": "low",
+      "enable_review_links": false,
+      "auto_approve": true,
+      "timeout_seconds": 3600,
+      "timeout_action": "auto_approve",
+      "changes_timeout_hours": null,
+      "instructions": null,
+      "allow_request_changes": false,
+      "allow_notes": true,
+      "allow_monitoring": true,
+      "default_auth_level": "public",
+      "default_expiry_seconds": 3600,
+      "status": "active",
+      "draft_config": null,
+      "draft_updated_at": null,
+      "chain_config": null,
+      "max_iterations": null,
+      "created_at": "2026-03-27T21:15:44.000Z",
+      "updated_at": "2026-07-02T06:31:20.000Z",
+      "object": "template"
+    }
+  ],
+  "has_more": false,
+  "total": 3
+}

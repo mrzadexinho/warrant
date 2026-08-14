@@ -1,0 +1,42 @@
+{
+  "name": "@idriszade/warrant-eve-outbound-demo",
+  "version": "0.1.0",
+  "description": "The ceremony (a real, certificate-producing governed run) and the offline demo for the warrant stack.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck:tests": "tsc -p tsconfig.test.json --noEmit",
+    "test": "vitest run",
+    "ceremony": "node --import tsx/esm src/ceremony-cli.ts",
+    "demo": "node --import tsx/esm src/demo/run-demo.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "4.0.23",
+    "@idriszade/core": "^0.1.0",
+    "@idriszade/warrant-core": "workspace:*",
+    "@idriszade/warrant-eve": "workspace:*",
+    "@idriszade/warrant-gatewerk": "workspace:*",
+    "@idriszade/warrant-ledger": "workspace:*",
+    "@idriszade/warrant-pack-gtm": "workspace:*",
+    "@idriszade/warrant-policy": "workspace:*",
+    "@idriszade/warrant-verify": "workspace:*",
+    "nodemailer": "9.0.3",
+    "pg": "^8.22.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "8.0.1",
+    "@types/pg": "^8.20.0",
+    "eve": "0.25.2",
+    "fast-check": "^4.4.0",
+    "tsx": "4.21.0",
+    "vitest": "^4.0.0"
+  }
+}

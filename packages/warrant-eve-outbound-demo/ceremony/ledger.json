@@ -1,0 +1,853 @@
+[
+  {
+    "seq": 1,
+    "runId": "wrun_01KYZA5KS9ZAZG01RZQW11YM5J",
+    "at": "2026-08-01T18:42:52.382Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_vY3sQc2sgtN7tidfGeqi3ReJ",
+      "actionKind": "send_email"
+    },
+    "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "1d5c5100e9d43d91c63225dacdbc636ed4a5909a52f943e5ab27d7a1574ee352"
+  },
+  {
+    "seq": 2,
+    "runId": "wrun_01KYZA5KS9ZAZG01RZQW11YM5J",
+    "at": "2026-08-01T18:42:53.767Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_vY3sQc2sgtN7tidfGeqi3ReJ",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "1d5c5100e9d43d91c63225dacdbc636ed4a5909a52f943e5ab27d7a1574ee352",
+    "hash": "561f0c66a42fb8d2722a870c46c0ca847f5f07acab7f6277eb27106f0e8f42c8"
+  },
+  {
+    "seq": 3,
+    "runId": "wrun_01KYZA5KS9ZAZG01RZQW11YM5J",
+    "at": "2026-08-01T18:42:56.046Z",
+    "event": "review.submitted",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "content": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "This message was proposed by an autonomous agent, held for human approval by policy, and released only after a person approved it. The signed receipt proves it stayed inside the rules.",
+        "subject": "Warrant ceremony — first governed send"
+      },
+      "reviewId": "gw_rev_2k_XUFA7gK0t6Pad3jVKFPNW",
+      "requestId": "call_vY3sQc2sgtN7tidfGeqi3ReJ"
+    },
+    "prevHash": "561f0c66a42fb8d2722a870c46c0ca847f5f07acab7f6277eb27106f0e8f42c8",
+    "hash": "5a6a89d6a048c35d8a59147c55209e4fec3c901eccd5921890e3cdb7b6d5cb81"
+  },
+  {
+    "seq": 4,
+    "runId": "wrun_01KYZAVZ3J5N02KRZTZPH8W8ZG",
+    "at": "2026-08-01T18:55:03.866Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_CkLqXa4Ibd1ULm48Y9SBj6sm",
+      "actionKind": "send_email"
+    },
+    "prevHash": "5a6a89d6a048c35d8a59147c55209e4fec3c901eccd5921890e3cdb7b6d5cb81",
+    "hash": "6c7b0c83ed3b257bb6b96fb3e51736bcbbdbdcc57e20383900cebefa8d1a3fa2"
+  },
+  {
+    "seq": 5,
+    "runId": "wrun_01KYZAVZ3J5N02KRZTZPH8W8ZG",
+    "at": "2026-08-01T18:55:05.409Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_CkLqXa4Ibd1ULm48Y9SBj6sm",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "6c7b0c83ed3b257bb6b96fb3e51736bcbbdbdcc57e20383900cebefa8d1a3fa2",
+    "hash": "1685fe8f17625802084d909f4ef090c629700e4f26f32186206d40b1c2b875a2"
+  },
+  {
+    "seq": 6,
+    "runId": "wrun_01KYZAVZ3J5N02KRZTZPH8W8ZG",
+    "at": "2026-08-01T18:55:06.556Z",
+    "event": "review.submitted",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "content": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "This message was proposed by an autonomous agent, held for human approval by policy, and released only after a person approved it. The signed receipt proves it stayed inside the rules.",
+        "subject": "Warrant ceremony — first governed send"
+      },
+      "reviewId": "gw_rev_02UujPXJYiGp5r3datddlE2S",
+      "requestId": "call_CkLqXa4Ibd1ULm48Y9SBj6sm"
+    },
+    "prevHash": "1685fe8f17625802084d909f4ef090c629700e4f26f32186206d40b1c2b875a2",
+    "hash": "050ef7704a49f01aa950896952554c4e9e8444102a9bac37b040513cfc52413f"
+  },
+  {
+    "seq": 7,
+    "runId": "wrun_01KYZB0RH9CVFG91ZNMYB6GFST",
+    "at": "2026-08-01T18:57:40.600Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_OMQAdm78q0e2K3QoIOjM2tue",
+      "actionKind": "send_email"
+    },
+    "prevHash": "050ef7704a49f01aa950896952554c4e9e8444102a9bac37b040513cfc52413f",
+    "hash": "48bf221a263982ebf4a4ddb1cee8d748f3c0e3b3d743f882e9af23a5cc6b2a20"
+  },
+  {
+    "seq": 8,
+    "runId": "wrun_01KYZB0RH9CVFG91ZNMYB6GFST",
+    "at": "2026-08-01T18:57:42.213Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_OMQAdm78q0e2K3QoIOjM2tue",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "48bf221a263982ebf4a4ddb1cee8d748f3c0e3b3d743f882e9af23a5cc6b2a20",
+    "hash": "4ec8bd7cd982e780b954c5e26122a54fc99a7cc9d0863342642ea66a314c0857"
+  },
+  {
+    "seq": 9,
+    "runId": "wrun_01KYZB0RH9CVFG91ZNMYB6GFST",
+    "at": "2026-08-01T18:57:43.270Z",
+    "event": "review.submitted",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "content": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "This message was proposed by an autonomous agent, held for human approval by policy, and released only after a person approved it. The signed receipt proves it stayed inside the rules.",
+        "subject": "Warrant ceremony — first governed send"
+      },
+      "reviewId": "gw_rev_nVEQhq-JZgn6YA-Yx7VU2cEj",
+      "requestId": "call_OMQAdm78q0e2K3QoIOjM2tue"
+    },
+    "prevHash": "4ec8bd7cd982e780b954c5e26122a54fc99a7cc9d0863342642ea66a314c0857",
+    "hash": "f0f869330e003a1ee6e80b3ca074e5231223bf8e1c14b448e7e8c56f43c8bd30"
+  },
+  {
+    "seq": 10,
+    "runId": "wrun_01KYZB0RH9CVFG91ZNMYB6GFST",
+    "at": "2026-08-01T19:03:14.155Z",
+    "event": "review.decided",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "decision": "approved",
+      "reviewId": "gw_rev_nVEQhq-JZgn6YA-Yx7VU2cEj",
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_OMQAdm78q0e2K3QoIOjM2tue"
+    },
+    "prevHash": "f0f869330e003a1ee6e80b3ca074e5231223bf8e1c14b448e7e8c56f43c8bd30",
+    "hash": "4e09cfc1f338db60e8d6a6e33ed0f33a61ed519dc7bfaeded758191413ef9f1e"
+  },
+  {
+    "seq": 11,
+    "runId": "wrun_01KYZB0RH9CVFG91ZNMYB6GFST",
+    "at": "2026-08-01T19:03:14.902Z",
+    "event": "warrant.issued",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "warrant": {
+        "id": "95775ffb-f75d-4781-a245-1f21c7e5c327",
+        "nonce": "ce2d284d-1350-4766-ac97-337929811ba9",
+        "runId": "wrun_01KYZB0RH9CVFG91ZNMYB6GFST",
+        "action": {
+          "kind": "send_email",
+          "target": "mrzadexinho@gmail.com",
+          "paramsHash": "43438f60a9feef82d585b481b593d496bdba16a4b260feed7c3be27a791d279f"
+        },
+        "issuedAt": "2026-08-01T19:03:14.887Z",
+        "expiresAt": "2026-08-01T20:03:14.887Z",
+        "principal": {
+          "id": "warrant-eve-outbound",
+          "kind": "agent"
+        },
+        "reviewRef": "gw_rev_nVEQhq-JZgn6YA-Yx7VU2cEj",
+        "signature": "1b81400f507f4bb734302d1b3dfd023967043fb7492636bcd0e2298daba23043151fcc2fcb786af085d639df9501433f19d9a85113eb8addbd1c28c76fb5c403",
+        "policyHash": "a55eab713d6c4a960782ac27bcb7e6fb6c765f1914f620624a0135d6e51400a0",
+        "verdictPath": "human",
+        "policyVersion": "0.1.0"
+      },
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_OMQAdm78q0e2K3QoIOjM2tue",
+      "reviewRef": "gw_rev_nVEQhq-JZgn6YA-Yx7VU2cEj",
+      "warrantId": "95775ffb-f75d-4781-a245-1f21c7e5c327",
+      "authorized": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "This message was proposed by an autonomous agent, held for human approval by policy, and released only after a person approved it. The signed receipt proves it stayed inside the rules.",
+        "subject": "Warrant ceremony — first governed send"
+      }
+    },
+    "prevHash": "4e09cfc1f338db60e8d6a6e33ed0f33a61ed519dc7bfaeded758191413ef9f1e",
+    "hash": "425d9964f97d26e2bddee91b25a7c16188c5c27119a72fd29fff539a33e348db"
+  },
+  {
+    "seq": 12,
+    "runId": "wrun_01KYZCDSZ2NYCWVVT1B0BTFS0V",
+    "at": "2026-08-01T19:22:18.227Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_0V5dnuh7u6zYK80wT5bdTTPb",
+      "actionKind": "send_email"
+    },
+    "prevHash": "425d9964f97d26e2bddee91b25a7c16188c5c27119a72fd29fff539a33e348db",
+    "hash": "16242889d47707443371876f0add5d6138fc85cdb52fa3d05efc5b0b71bc1889"
+  },
+  {
+    "seq": 13,
+    "runId": "wrun_01KYZCDSZ2NYCWVVT1B0BTFS0V",
+    "at": "2026-08-01T19:22:19.623Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_0V5dnuh7u6zYK80wT5bdTTPb",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "16242889d47707443371876f0add5d6138fc85cdb52fa3d05efc5b0b71bc1889",
+    "hash": "9d2326c6da5d823dfcffee0a4b0c1cb36b27887ba5231f5b76b0f1352ee6e85c"
+  },
+  {
+    "seq": 14,
+    "runId": "wrun_01KYZCDSZ2NYCWVVT1B0BTFS0V",
+    "at": "2026-08-01T19:22:20.749Z",
+    "event": "review.submitted",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "content": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "This message was proposed by an autonomous agent, held for human approval by policy, and released only after a person approved it. The signed receipt proves it stayed inside the rules.",
+        "subject": "Warrant ceremony — first governed send"
+      },
+      "reviewId": "gw_rev_wgxla90OCZ8fwSyoUAZMx3Bj",
+      "requestId": "call_0V5dnuh7u6zYK80wT5bdTTPb"
+    },
+    "prevHash": "9d2326c6da5d823dfcffee0a4b0c1cb36b27887ba5231f5b76b0f1352ee6e85c",
+    "hash": "aeffd978b15ea02b58bb96761d46c9cd8683adaef6d841b6296abd5cc87cf0f7"
+  },
+  {
+    "seq": 15,
+    "runId": "wrun_01KYZCDSZ2NYCWVVT1B0BTFS0V",
+    "at": "2026-08-01T19:23:49.027Z",
+    "event": "review.decided",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "decision": "approved",
+      "reviewId": "gw_rev_wgxla90OCZ8fwSyoUAZMx3Bj",
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_0V5dnuh7u6zYK80wT5bdTTPb"
+    },
+    "prevHash": "aeffd978b15ea02b58bb96761d46c9cd8683adaef6d841b6296abd5cc87cf0f7",
+    "hash": "40b7d80a40b271c19bfb5acaf403cc934eb1373ba9ad7c5d992ce36abe45ddf5"
+  },
+  {
+    "seq": 16,
+    "runId": "wrun_01KYZCDSZ2NYCWVVT1B0BTFS0V",
+    "at": "2026-08-01T19:23:49.835Z",
+    "event": "warrant.issued",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "warrant": {
+        "id": "dd4d4ebf-8b9e-45dd-a8f7-32035d0f65f3",
+        "nonce": "f253740f-e9d0-49de-b000-8d6b82d1fd37",
+        "runId": "wrun_01KYZCDSZ2NYCWVVT1B0BTFS0V",
+        "action": {
+          "kind": "send_email",
+          "target": "mrzadexinho@gmail.com",
+          "paramsHash": "43438f60a9feef82d585b481b593d496bdba16a4b260feed7c3be27a791d279f"
+        },
+        "issuedAt": "2026-08-01T19:23:49.777Z",
+        "expiresAt": "2026-08-01T20:23:49.777Z",
+        "principal": {
+          "id": "warrant-eve-outbound",
+          "kind": "agent"
+        },
+        "reviewRef": "gw_rev_wgxla90OCZ8fwSyoUAZMx3Bj",
+        "signature": "f77da55c892b3412b4f06b07196c6bb3d8d0ab65468a6a503d57aa61b57a1576ed9653c97dd45faa636189488638e5d7c5099608e8786bcf711a4b1ad7b4a101",
+        "policyHash": "a55eab713d6c4a960782ac27bcb7e6fb6c765f1914f620624a0135d6e51400a0",
+        "verdictPath": "human",
+        "policyVersion": "0.1.0"
+      },
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_0V5dnuh7u6zYK80wT5bdTTPb",
+      "reviewRef": "gw_rev_wgxla90OCZ8fwSyoUAZMx3Bj",
+      "warrantId": "dd4d4ebf-8b9e-45dd-a8f7-32035d0f65f3",
+      "authorized": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "This message was proposed by an autonomous agent, held for human approval by policy, and released only after a person approved it. The signed receipt proves it stayed inside the rules.",
+        "subject": "Warrant ceremony — first governed send"
+      }
+    },
+    "prevHash": "40b7d80a40b271c19bfb5acaf403cc934eb1373ba9ad7c5d992ce36abe45ddf5",
+    "hash": "7b23b4dc49ba27759a00d14cae0fff777ecced52549ae02e1f03490cf76b5c29"
+  },
+  {
+    "seq": 17,
+    "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+    "at": "2026-08-01T19:47:14.529Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_R7iDcs0E0afycn3iNXxnKa36",
+      "actionKind": "send_email"
+    },
+    "prevHash": "7b23b4dc49ba27759a00d14cae0fff777ecced52549ae02e1f03490cf76b5c29",
+    "hash": "3f736f7702d8af6d460d617b07572e0ae26a802933a7573c9375c8f3aa4716b0"
+  },
+  {
+    "seq": 18,
+    "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+    "at": "2026-08-01T19:47:16.173Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_R7iDcs0E0afycn3iNXxnKa36",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "3f736f7702d8af6d460d617b07572e0ae26a802933a7573c9375c8f3aa4716b0",
+    "hash": "45fa84405c2dbd6d38707f89e5324a9e6b1c092fa99c91df05e36c02618de233"
+  },
+  {
+    "seq": 19,
+    "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+    "at": "2026-08-01T19:47:17.535Z",
+    "event": "review.submitted",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "content": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "Hi there —\n\nI’m reaching out because we’ve been working with teams that are hiring and trying to scale outbound without adding a lot of manual busywork.\n\nWe built GTM tooling that helps reps (and founders) quickly:\n- research accounts/roles and draft personalized outreach,\n- automate follow-ups with guardrails,\n- track what’s working across sequences,\n- keep messaging consistent while still sounding human.\n\nIf you’re open to it, I’d love to learn how you’re running outbound today and share a 10–15 minute walkthrough to see if it could help your team.\n\nWould next week work for a quick chat? If you tell me what you’re hiring for and your ICP, I can tailor examples.\n\nBest,\n[Your Name]\n[Title / Company]\n[Phone / Calendly]",
+        "subject": "GTM tooling to speed up outbound + follow-up (without losing personalization)"
+      },
+      "reviewId": "gw_rev_vV5gKKJuaNkC_DYdPtyTEGc1",
+      "requestId": "call_R7iDcs0E0afycn3iNXxnKa36"
+    },
+    "prevHash": "45fa84405c2dbd6d38707f89e5324a9e6b1c092fa99c91df05e36c02618de233",
+    "hash": "48e3aca6c095303fe305ddde755e256a15783b455cccbc68a7f17b1c6aefd161"
+  },
+  {
+    "seq": 20,
+    "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+    "at": "2026-08-01T22:45:08.271Z",
+    "event": "review.decided",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "decision": "approved",
+      "reviewId": "gw_rev_vV5gKKJuaNkC_DYdPtyTEGc1",
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_R7iDcs0E0afycn3iNXxnKa36"
+    },
+    "prevHash": "48e3aca6c095303fe305ddde755e256a15783b455cccbc68a7f17b1c6aefd161",
+    "hash": "8e917af1468acca35eeb182dacc833c4b54cd4ad188bc658759c5ae9d93add77"
+  },
+  {
+    "seq": 21,
+    "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+    "at": "2026-08-01T22:45:09.096Z",
+    "event": "warrant.issued",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "warrant": {
+        "id": "dd663444-7768-4cf6-831b-30ec3b7f0fd6",
+        "nonce": "8d97fc4e-e1cc-485c-92be-e048b2b80780",
+        "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+        "action": {
+          "kind": "send_email",
+          "target": "mrzadexinho@gmail.com",
+          "paramsHash": "e387e76e01189aaae0f5974c825c187491f965f08c664e661710c378a60920c6"
+        },
+        "issuedAt": "2026-08-01T22:45:09.047Z",
+        "expiresAt": "2026-08-01T23:45:09.047Z",
+        "principal": {
+          "id": "warrant-eve-outbound",
+          "kind": "agent"
+        },
+        "reviewRef": "gw_rev_vV5gKKJuaNkC_DYdPtyTEGc1",
+        "signature": "0f0bd322458f32b30b0e90f3e7b60635c58d432cd32bd968435c130b5cd6e9329836f6e308101863862635f5fa54b966bae60fe25802baf5f6ffd183b51f4607",
+        "policyHash": "a55eab713d6c4a960782ac27bcb7e6fb6c765f1914f620624a0135d6e51400a0",
+        "verdictPath": "human",
+        "policyVersion": "0.1.0"
+      },
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_R7iDcs0E0afycn3iNXxnKa36",
+      "reviewRef": "gw_rev_vV5gKKJuaNkC_DYdPtyTEGc1",
+      "warrantId": "dd663444-7768-4cf6-831b-30ec3b7f0fd6",
+      "authorized": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "Hi there —\n\nI’m reaching out because we’ve been working with teams that are hiring and trying to scale outbound without adding a lot of manual busywork.\n\nWe built GTM tooling that helps reps (and founders) quickly:\n- research accounts/roles and draft personalized outreach,\n- automate follow-ups with guardrails,\n- track what’s working across sequences,\n- keep messaging consistent while still sounding human.\n\nIf you’re open to it, I’d love to learn how you’re running outbound today and share a 10–15 minute walkthrough to see if it could help your team.\n\nWould next week work for a quick chat? If you tell me what you’re hiring for and your ICP, I can tailor examples.\n\nBest,\n[Your Name]\n[Title / Company]\n[Phone / Calendly]",
+        "subject": "GTM tooling to speed up outbound + follow-up (without losing personalization)"
+      }
+    },
+    "prevHash": "8e917af1468acca35eeb182dacc833c4b54cd4ad188bc658759c5ae9d93add77",
+    "hash": "d5cbed7a6271874791b5badd485b0d487d151af9be4e501fcd688b49c7ad6038"
+  },
+  {
+    "seq": 22,
+    "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+    "at": "2026-08-01T22:45:10.125Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_R7iDcs0E0afycn3iNXxnKa36",
+      "actionKind": "send_email"
+    },
+    "prevHash": "d5cbed7a6271874791b5badd485b0d487d151af9be4e501fcd688b49c7ad6038",
+    "hash": "5a64343cd9b5c9c0bfab9cd9e605cf7eda1cf20de5511999c5464e9ac61e0c0f"
+  },
+  {
+    "seq": 23,
+    "runId": "wrun_01KYZDVD21GACKEAED4WXA42G4",
+    "at": "2026-08-01T22:45:10.859Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_R7iDcs0E0afycn3iNXxnKa36",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "5a64343cd9b5c9c0bfab9cd9e605cf7eda1cf20de5511999c5464e9ac61e0c0f",
+    "hash": "4373fd72c6b192ffdf160b34feeaf38f976b1db366a75c421aae700f34272a43"
+  },
+  {
+    "seq": 24,
+    "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+    "at": "2026-08-01T23:05:40.398Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_ENxGSpNKaUkt3d4TY05bNgHg",
+      "actionKind": "send_email"
+    },
+    "prevHash": "4373fd72c6b192ffdf160b34feeaf38f976b1db366a75c421aae700f34272a43",
+    "hash": "b22a2735a3a0c87f8d07f753599c64ac20394b2e6f9758854099da729e1e348d"
+  },
+  {
+    "seq": 25,
+    "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+    "at": "2026-08-01T23:05:41.772Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_ENxGSpNKaUkt3d4TY05bNgHg",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "b22a2735a3a0c87f8d07f753599c64ac20394b2e6f9758854099da729e1e348d",
+    "hash": "8f0ccb5cb7488226e61229d69decae72162408be012a59a6e6d4d8e313f5fad6"
+  },
+  {
+    "seq": 26,
+    "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+    "at": "2026-08-01T23:05:43.576Z",
+    "event": "review.submitted",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "content": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "Hi there —\n\nI’m reaching out because many hiring managers I speak with are being asked to “do more with less” on pipeline. Our GTM tooling helps revenue teams launch targeted outbound faster by:\n\n• Turning ICP + signals into prioritized account lists\n• Generating personalized emails/LinkedIn touches at scale (with guardrails)\n• Keeping messaging consistent across reps and sequences\n• Tracking what’s working so you can iterate quickly\n\nIf it’s useful, I’d be happy to share a 10‑minute walkthrough and a couple example sequences for roles you’re hiring for.\n\nAre you the right person to speak with about outbound/GTM ops? If not, who should I contact?\n\nBest,\n[Your Name]\n[Title] | [Company]\n[Phone]\n",
+        "subject": "Faster outbound with GTM tooling (personalized + compliant)"
+      },
+      "reviewId": "gw_rev_m5WFwQxmx6yG7ert1iiqcdNB",
+      "requestId": "call_ENxGSpNKaUkt3d4TY05bNgHg"
+    },
+    "prevHash": "8f0ccb5cb7488226e61229d69decae72162408be012a59a6e6d4d8e313f5fad6",
+    "hash": "c41be64d82e74f01307a2b5df9fdbdd3430dd4dffde16329a10559e67dbe764a"
+  },
+  {
+    "seq": 27,
+    "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+    "at": "2026-08-01T23:07:57.865Z",
+    "event": "review.decided",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "decision": "approved",
+      "reviewId": "gw_rev_m5WFwQxmx6yG7ert1iiqcdNB",
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_ENxGSpNKaUkt3d4TY05bNgHg"
+    },
+    "prevHash": "c41be64d82e74f01307a2b5df9fdbdd3430dd4dffde16329a10559e67dbe764a",
+    "hash": "3fba712769507fdafb0278f1e2de590cdb000acbd6a029de056a72ed10a90352"
+  },
+  {
+    "seq": 28,
+    "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+    "at": "2026-08-01T23:07:58.646Z",
+    "event": "warrant.issued",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "warrant": {
+        "id": "4f891a63-667e-4310-8338-8993a2b3b41a",
+        "nonce": "73b8561c-4458-446c-97b1-c3ad11640885",
+        "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+        "action": {
+          "kind": "send_email",
+          "target": "mrzadexinho@gmail.com",
+          "paramsHash": "474326ec3b2dda8ee0e4c68f24eb941e82bf365c91352f5eadbcf53347472dbe"
+        },
+        "issuedAt": "2026-08-01T23:07:58.605Z",
+        "expiresAt": "2026-08-02T00:07:58.605Z",
+        "principal": {
+          "id": "warrant-eve-outbound",
+          "kind": "agent"
+        },
+        "reviewRef": "gw_rev_m5WFwQxmx6yG7ert1iiqcdNB",
+        "signature": "a56ce90959a27a1d80eb1a2bfe636dcabff41c41cf614ea5e9395ff630da3a6689d4082eb3ed34700e424fbf77b4920c18e240b5cdb599b52b66a064fde34008",
+        "policyHash": "a55eab713d6c4a960782ac27bcb7e6fb6c765f1914f620624a0135d6e51400a0",
+        "verdictPath": "human",
+        "policyVersion": "0.1.0"
+      },
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_ENxGSpNKaUkt3d4TY05bNgHg",
+      "reviewRef": "gw_rev_m5WFwQxmx6yG7ert1iiqcdNB",
+      "warrantId": "4f891a63-667e-4310-8338-8993a2b3b41a",
+      "authorized": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "Hi there —\n\nI’m reaching out because many hiring managers I speak with are being asked to “do more with less” on pipeline. Our GTM tooling helps revenue teams launch targeted outbound faster by:\n\n• Turning ICP + signals into prioritized account lists\n• Generating personalized emails/LinkedIn touches at scale (with guardrails)\n• Keeping messaging consistent across reps and sequences\n• Tracking what’s working so you can iterate quickly\n\nIf it’s useful, I’d be happy to share a 10‑minute walkthrough and a couple example sequences for roles you’re hiring for.\n\nAre you the right person to speak with about outbound/GTM ops? If not, who should I contact?\n\nBest,\n[Your Name]\n[Title] | [Company]\n[Phone]\n",
+        "subject": "Faster outbound with GTM tooling (personalized + compliant)"
+      }
+    },
+    "prevHash": "3fba712769507fdafb0278f1e2de590cdb000acbd6a029de056a72ed10a90352",
+    "hash": "b31a62bf16e2df73712d7dcaa197048847f42650bf13d2ec8d533d8abd9f5b0c"
+  },
+  {
+    "seq": 29,
+    "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+    "at": "2026-08-01T23:07:59.634Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_ENxGSpNKaUkt3d4TY05bNgHg",
+      "actionKind": "send_email"
+    },
+    "prevHash": "b31a62bf16e2df73712d7dcaa197048847f42650bf13d2ec8d533d8abd9f5b0c",
+    "hash": "704912a8cde8628b1d1dcc203fcaed1be85fc545f064be2864ed35e425eec3b2"
+  },
+  {
+    "seq": 30,
+    "runId": "wrun_01KYZS6Q8PZRFN45N2YQ2GZV9V",
+    "at": "2026-08-01T23:08:00.362Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_ENxGSpNKaUkt3d4TY05bNgHg",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "704912a8cde8628b1d1dcc203fcaed1be85fc545f064be2864ed35e425eec3b2",
+    "hash": "4095b2fddc76fcf51e04325e6bbecf31358b0a9c291223eb84caa0f5f760aea1"
+  },
+  {
+    "seq": 31,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-01T23:56:20.782Z",
+    "event": "warrant.requested",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "target": "mrzadexinho@gmail.com",
+      "context": {
+        "audience": "cold"
+      },
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6",
+      "actionKind": "send_email"
+    },
+    "prevHash": "4095b2fddc76fcf51e04325e6bbecf31358b0a9c291223eb84caa0f5f760aea1",
+    "hash": "410e24d18a8bc55a931ed4a6450da5c18429a02520841d7a4f366d94b617b986"
+  },
+  {
+    "seq": 32,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-01T23:56:21.524Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "path": "human",
+      "ruleId": "cold-email-hiring-manager",
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6",
+      "contextHash": "2a4c7e90a33fb80f68473d81fa7901d8917a00f120382c795d750fd782a7fa47"
+    },
+    "prevHash": "410e24d18a8bc55a931ed4a6450da5c18429a02520841d7a4f366d94b617b986",
+    "hash": "53044ee57a7d8b5fb88cf8b59d890cbdbef08b5b786de481bf9f6a1523bc24e0"
+  },
+  {
+    "seq": 33,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-01T23:56:22.548Z",
+    "event": "review.submitted",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "content": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "Hi there —\n\nI’m reaching out because you’re hiring GTM talent, and many teams in that phase run into the same bottleneck: reps spending too much time on list building, personalization, follow-ups, and CRM hygiene instead of pipeline creation.\n\nWe’ve built AI-assisted GTM tooling that helps teams:\n• Source and enrich leads faster\n• Generate tailored outreach drafts and sequences (with guardrails)\n• Automate follow-ups and routing\n• Keep CRM notes and next steps up to date\n\nIf you’re open to it, I’d love to learn how you’re running outbound today and share a quick 10–15 minute demo focused on what would save your team the most time.\n\nAre you the right person for this, or should I speak with someone else on your RevOps/Growth team?\n\nBest,\n[Your Name]\n[Title] | [Company]\n[Phone] | [Calendar link]\n",
+        "subject": "Cut busywork in outbound: AI-assisted GTM tooling for your team"
+      },
+      "reviewId": "gw_rev_LPvYfaTKft1kwmbpEBa7X0fg",
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6"
+    },
+    "prevHash": "53044ee57a7d8b5fb88cf8b59d890cbdbef08b5b786de481bf9f6a1523bc24e0",
+    "hash": "fe1280e1f031cc980fac442db16bf3ce0c269566a84939ce598f3a0af04e843c"
+  },
+  {
+    "seq": 34,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-01T23:59:37.837Z",
+    "event": "review.decided",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "decision": "approved",
+      "reviewId": "gw_rev_LPvYfaTKft1kwmbpEBa7X0fg",
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6"
+    },
+    "prevHash": "fe1280e1f031cc980fac442db16bf3ce0c269566a84939ce598f3a0af04e843c",
+    "hash": "e6295acd4ac7e7f74924db8a23c40b6d46626052baa782addef42b3fc52c7d75"
+  },
+  {
+    "seq": 35,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-01T23:59:39.593Z",
+    "event": "warrant.issued",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "warrant": {
+        "id": "a580a61c-5b97-4475-9b2c-ada42aac29aa",
+        "nonce": "a53bbf57-a788-48b9-9154-53f5f1a303d1",
+        "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+        "action": {
+          "kind": "send_email",
+          "target": "mrzadexinho@gmail.com",
+          "paramsHash": "cf4856cace72b2f068a4df0661ee2ec8e28f8b3bb89c7521f57b8cb9b9880f43"
+        },
+        "issuedAt": "2026-08-01T23:59:39.565Z",
+        "expiresAt": "2026-08-02T00:59:39.565Z",
+        "principal": {
+          "id": "warrant-eve-outbound",
+          "kind": "agent"
+        },
+        "reviewRef": "gw_rev_LPvYfaTKft1kwmbpEBa7X0fg",
+        "signature": "8c4e667c31be9a99a88a4594995e229002f0f7fe5c7faecee18d3880d9390339d325cb74ff9565d6c58dd2a6ceca2ae3df6e01891b5f7f0bf967293494ccc903",
+        "policyHash": "a55eab713d6c4a960782ac27bcb7e6fb6c765f1914f620624a0135d6e51400a0",
+        "verdictPath": "human",
+        "policyVersion": "0.1.0"
+      },
+      "decidedBy": "admin@gatewerk.local",
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6",
+      "reviewRef": "gw_rev_LPvYfaTKft1kwmbpEBa7X0fg",
+      "warrantId": "a580a61c-5b97-4475-9b2c-ada42aac29aa",
+      "authorized": {
+        "to": "mrzadexinho@gmail.com",
+        "body": "Hi there —\n\nI’m reaching out because you’re hiring GTM talent, and many teams in that phase run into the same bottleneck: reps spending too much time on list building, personalization, follow-ups, and CRM hygiene instead of pipeline creation.\n\nWe’ve built AI-assisted GTM tooling that helps teams:\n• Source and enrich leads faster\n• Generate tailored outreach drafts and sequences (with guardrails)\n• Automate follow-ups and routing\n• Keep CRM notes and next steps up to date\n\nIf you’re open to it, I’d love to learn how you’re running outbound today and share a quick 10–15 minute demo focused on what would save your team the most time.\n\nAre you the right person for this, or should I speak with someone else on your RevOps/Growth team?\n\nBest,\n[Your Name]\n[Title] | [Company]\n[Phone] | [Calendar link]\n",
+        "subject": "Cut busywork in outbound: AI-assisted GTM tooling for your team"
+      }
+    },
+    "prevHash": "e6295acd4ac7e7f74924db8a23c40b6d46626052baa782addef42b3fc52c7d75",
+    "hash": "5631e60143cdd68f17e2d1f037cb55251cc8e25d6b8b8041302f05b477ed7c69"
+  },
+  {
+    "seq": 36,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-01T23:59:42.036Z",
+    "event": "action.executed",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "nonce": "a53bbf57-a788-48b9-9154-53f5f1a303d1",
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6",
+      "warrantId": "a580a61c-5b97-4475-9b2c-ada42aac29aa"
+    },
+    "prevHash": "5631e60143cdd68f17e2d1f037cb55251cc8e25d6b8b8041302f05b477ed7c69",
+    "hash": "da7990853ad9dd4e0a33f06f0dafcb7a7a15856f1935d88e2133aeadba7d1919"
+  },
+  {
+    "seq": 37,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-01T23:59:43.753Z",
+    "event": "action.outcome",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "status": "queued",
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6",
+      "warrantId": "a580a61c-5b97-4475-9b2c-ada42aac29aa"
+    },
+    "prevHash": "da7990853ad9dd4e0a33f06f0dafcb7a7a15856f1935d88e2133aeadba7d1919",
+    "hash": "8ba5d8c433a722efb25785f71490c56069c382935000bbf64b988a8311c6acb1"
+  },
+  {
+    "seq": 38,
+    "runId": "wrun_01KYZW3GABHYGXW3AW6FWNQ3KS",
+    "at": "2026-08-02T00:09:14.713Z",
+    "event": "action.outcome",
+    "principal": {
+      "id": "warrant-eve-outbound",
+      "kind": "agent"
+    },
+    "payload": {
+      "status": "sent",
+      "messageId": "<84b2d811-dc4a-1beb-30e3-e59063c64d8c@idriszade.com>",
+      "requestId": "call_KR0Kc6fGuEinLL7E9mCxLqU6",
+      "warrantId": "a580a61c-5b97-4475-9b2c-ada42aac29aa"
+    },
+    "prevHash": "8ba5d8c433a722efb25785f71490c56069c382935000bbf64b988a8311c6acb1",
+    "hash": "6bc96670a31169722faa7c35d397b493db5a404323300b9324ae122c51b95194"
+  }
+]

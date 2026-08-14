@@ -1,0 +1,28 @@
+{
+  "name": "@idriszade/warrant-authorize",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "The authorization seam. One request path, many runtimes: record the request, evaluate, record the evaluation with the context it saw, record the outcome. Runtime-blind by construction.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck:tests": "tsc -p tsconfig.test.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@idriszade/core": "^0.1.0",
+    "@idriszade/warrant-core": "workspace:*",
+    "@idriszade/warrant-ledger": "workspace:*",
+    "@idriszade/warrant-policy": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^4.0.0"
+  }
+}

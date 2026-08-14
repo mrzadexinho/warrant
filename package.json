@@ -1,0 +1,40 @@
+{
+  "name": "warrant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Warrant: a governance layer for AI agents. Enforces deterministic policy at the moment an agent acts, and produces a portable cryptographic proof the action stayed inside the rules.",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "pnpm": {
+    "overrides": {
+      "nanoid@<3.3.18": ">=3.3.18",
+      "esbuild@<0.28.1": ">=0.28.1"
+    }
+  },
+  "scripts": {
+    "typecheck": "pnpm -r --no-bail --workspace-concurrency=1 run typecheck",
+    "typecheck:tests": "pnpm -r --no-bail --workspace-concurrency=1 run typecheck:tests",
+    "test": "pnpm -r --no-bail test",
+    "lint": "biome check packages",
+    "lint:fix": "biome check --write packages",
+    "ceremony": "pnpm --filter @idriszade/warrant-eve-outbound-demo ceremony",
+    "demo": "pnpm --filter @idriszade/warrant-eve-outbound-demo demo",
+    "provision:ledger": "node --import tsx/esm packages/warrant-ledger/src/provision-cli.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.14",
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "^4.0.0",
+    "dotenv": "^17.4.2",
+    "fast-check": "^4.4.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0",
+    "zod": "^4.4.3"
+  }
+}

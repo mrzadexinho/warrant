@@ -1,0 +1,38 @@
+{
+  "name": "@idriszade/warrant-eve",
+  "version": "0.1.0",
+  "description": "Warrant adapter for the eve agent runtime: park on a human verdict, wake on the decision, execute under the minted warrant.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck:tests": "tsc -p tsconfig.test.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@idriszade/core": "^0.1.0",
+    "@idriszade/warrant-authorize": "workspace:*",
+    "@idriszade/warrant-core": "workspace:*",
+    "@idriszade/warrant-guard": "workspace:*",
+    "@idriszade/warrant-policy": "workspace:*",
+    "@idriszade/warrant-ledger": "workspace:*",
+    "@idriszade/warrant-gatewerk": "workspace:*",
+    "@idriszade/warrant-verify": "workspace:*",
+    "pg": "^8.16.3",
+    "zod": "^4.4.3"
+  },
+  "peerDependencies": {
+    "eve": "^0.25.2"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.14",
+    "eve": "0.25.2",
+    "fast-check": "^4.4.0"
+  }
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+.DS_Store
+*.log
+.env
+.env.local
+# Every .env variant: a secrets ignore rule that enumerates filenames is a rule that
+# misses the next filename, so match the pattern instead.
+.env.*
+!.env.example
+
+# eve build outputs. `eve build` writes both; a single `eve build` drops ~7 MB of
+# untracked files into the demo package, which is one `git add -A` away from a commit.
+# Directories, not filenames, for the reason recorded above.
+.eve/
+.output/
+backups/

@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`replayRun > golden snapshot of RunReport (fully deterministic via injected clock) 1`] = `
+{
+  "chainVerified": true,
+  "counts": {
+    "attested": 1,
+    "auto": 0,
+    "denied": 0,
+    "executed": 1,
+    "human": 1,
+    "requested": 1,
+    "trajectoryProven": 0,
+  },
+  "generatedAt": "2026-07-16T12:00:00.000Z",
+  "journeys": [
+    {
+      "actionKind": "send_email",
+      "attestedBy": "op-1",
+      "executed": true,
+      "outcome": "queued",
+      "path": "human",
+      "requestId": "req-1",
+      "reviewRef": "rev-1",
+      "ruleId": "cold-email-hiring-manager",
+      "target": "a@b.com",
+      "warrantId": "w-1",
+    },
+  ],
+  "runId": "run-abc",
+  "violations": [],
+}
+`;

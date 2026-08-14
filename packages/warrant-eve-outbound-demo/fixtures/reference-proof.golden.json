@@ -1,0 +1,316 @@
+[
+  {
+    "seq": 1,
+    "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:00.000Z",
+    "event": "warrant.requested",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-2",
+      "actionKind": "send_email",
+      "target": "hiring@palantir.example"
+    },
+    "hash": "dc929b91433c3c925a2bce69354744170542d9ed98cd3474d3e44f9da4b21e2b"
+  },
+  {
+    "seq": 2,
+    "prevHash": "dc929b91433c3c925a2bce69354744170542d9ed98cd3474d3e44f9da4b21e2b",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:01.000Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-2",
+      "ruleId": "cold-email-hiring-manager",
+      "path": "human"
+    },
+    "hash": "7d36ddfa2b162881fb8ab3e14ee60e5a6426bb0b6dad99da11cb349b42a37bb6"
+  },
+  {
+    "seq": 3,
+    "prevHash": "7d36ddfa2b162881fb8ab3e14ee60e5a6426bb0b6dad99da11cb349b42a37bb6",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:02.000Z",
+    "event": "review.submitted",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-2",
+      "reviewId": "sim-0"
+    },
+    "hash": "ded66b1f94b84ba48d24fed211a62cfa53be5b72da65b7d6c05c4594676bc086"
+  },
+  {
+    "seq": 4,
+    "prevHash": "ded66b1f94b84ba48d24fed211a62cfa53be5b72da65b7d6c05c4594676bc086",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:03.000Z",
+    "event": "review.decided",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "reviewId": "sim-0",
+      "decision": "approved"
+    },
+    "hash": "ed5e2f0a0b5359ffd70fabd3b85c2d0647edb70c2a41be99f910657ded8f8ff6"
+  },
+  {
+    "seq": 5,
+    "prevHash": "ed5e2f0a0b5359ffd70fabd3b85c2d0647edb70c2a41be99f910657ded8f8ff6",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:05.000Z",
+    "event": "warrant.issued",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-2",
+      "warrantId": "id-3",
+      "reviewRef": "sim-0"
+    },
+    "hash": "aac4797fb3193b43a26728fe82a01013b5ef42a0c6b4f5f31edebdd0c5c805ab"
+  },
+  {
+    "seq": 6,
+    "prevHash": "aac4797fb3193b43a26728fe82a01013b5ef42a0c6b4f5f31edebdd0c5c805ab",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:07.000Z",
+    "event": "action.executed",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "warrantId": "id-3",
+      "nonce": "id-4",
+      "to": "hiring@palantir.example"
+    },
+    "hash": "0cd7c92c7c004bb05aeaecfb1c22e7c8b14678ec16f6915186e35028c2ff8b47"
+  },
+  {
+    "seq": 7,
+    "prevHash": "0cd7c92c7c004bb05aeaecfb1c22e7c8b14678ec16f6915186e35028c2ff8b47",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:09.000Z",
+    "event": "action.outcome",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "warrantId": "id-3",
+      "status": "queued"
+    },
+    "hash": "01921ca3ef0a4f480a7c81e942b983d6228a935cc6889645fbc7810f32585a32"
+  },
+  {
+    "seq": 8,
+    "prevHash": "01921ca3ef0a4f480a7c81e942b983d6228a935cc6889645fbc7810f32585a32",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:10.000Z",
+    "event": "warrant.requested",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-5",
+      "actionKind": "send_email",
+      "target": "hiring@scale-ai.example"
+    },
+    "hash": "cb2a6394c0af7af9a1e3463afb27c94c0b9c0aba07ea186cc56eba24499ec411"
+  },
+  {
+    "seq": 9,
+    "prevHash": "cb2a6394c0af7af9a1e3463afb27c94c0b9c0aba07ea186cc56eba24499ec411",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:11.000Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-5",
+      "ruleId": "cold-email-hiring-manager",
+      "path": "human"
+    },
+    "hash": "6dc457a935a747c15ee50afe7dabf7c233d1340b63de210fc7b6e731869f9dd7"
+  },
+  {
+    "seq": 10,
+    "prevHash": "6dc457a935a747c15ee50afe7dabf7c233d1340b63de210fc7b6e731869f9dd7",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:12.000Z",
+    "event": "review.submitted",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-5",
+      "reviewId": "sim-1"
+    },
+    "hash": "e6e9bd8a9e36e788948cb1ac55bc82798585dfa5142057d12b86807b83eb165d"
+  },
+  {
+    "seq": 11,
+    "prevHash": "e6e9bd8a9e36e788948cb1ac55bc82798585dfa5142057d12b86807b83eb165d",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:13.000Z",
+    "event": "review.decided",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "reviewId": "sim-1",
+      "decision": "approved"
+    },
+    "hash": "a36a5f5994c55771760984be815c32c68945252377601ba0da2a7bc291b8762b"
+  },
+  {
+    "seq": 12,
+    "prevHash": "a36a5f5994c55771760984be815c32c68945252377601ba0da2a7bc291b8762b",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:15.000Z",
+    "event": "warrant.issued",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-5",
+      "warrantId": "id-6",
+      "reviewRef": "sim-1"
+    },
+    "hash": "27644f321346f72f56347ca1bdb095fe94d60ef539937424c4c55ed9b813c652"
+  },
+  {
+    "seq": 13,
+    "prevHash": "27644f321346f72f56347ca1bdb095fe94d60ef539937424c4c55ed9b813c652",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:17.000Z",
+    "event": "action.executed",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "warrantId": "id-6",
+      "nonce": "id-7",
+      "to": "hiring@scale-ai.example"
+    },
+    "hash": "05c7413c1edf6d8131fac17edc3cad09b27651e8df9f395f5dcf6f2b42f8a184"
+  },
+  {
+    "seq": 14,
+    "prevHash": "05c7413c1edf6d8131fac17edc3cad09b27651e8df9f395f5dcf6f2b42f8a184",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:19.000Z",
+    "event": "action.outcome",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "warrantId": "id-6",
+      "status": "queued"
+    },
+    "hash": "a20d6474d6b7931c57d4619656cdb56eaae4bb4405a3bb829015aa2887b24607"
+  },
+  {
+    "seq": 15,
+    "prevHash": "a20d6474d6b7931c57d4619656cdb56eaae4bb4405a3bb829015aa2887b24607",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:20.000Z",
+    "event": "warrant.requested",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-8",
+      "actionKind": "send_email",
+      "target": "hiring@databricks.example"
+    },
+    "hash": "eca1095199d4cdb585d9f8f2bd5eaeec023d460eb8f311b49d4bbd7a76f0aa85"
+  },
+  {
+    "seq": 16,
+    "prevHash": "eca1095199d4cdb585d9f8f2bd5eaeec023d460eb8f311b49d4bbd7a76f0aa85",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:21.000Z",
+    "event": "policy.evaluated",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-8",
+      "ruleId": "cold-email-hiring-manager",
+      "path": "human"
+    },
+    "hash": "a47338b38fa046a8cfa87c421cb33701eeabef69ff47bb2c7c8db219e9e17b16"
+  },
+  {
+    "seq": 17,
+    "prevHash": "a47338b38fa046a8cfa87c421cb33701eeabef69ff47bb2c7c8db219e9e17b16",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:22.000Z",
+    "event": "review.submitted",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-8",
+      "reviewId": "sim-2"
+    },
+    "hash": "a465704bdcae78f9a89bbd7a639f3e238dd1ececa27db67fdd6a7069578a1e0c"
+  },
+  {
+    "seq": 18,
+    "prevHash": "a465704bdcae78f9a89bbd7a639f3e238dd1ececa27db67fdd6a7069578a1e0c",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:23.000Z",
+    "event": "review.decided",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "reviewId": "sim-2",
+      "decision": "rejected"
+    },
+    "hash": "30712c75d5a86a40814b74fe5c11ec989398405a534d13c96332aef96759246b"
+  },
+  {
+    "seq": 19,
+    "prevHash": "30712c75d5a86a40814b74fe5c11ec989398405a534d13c96332aef96759246b",
+    "runId": "demo-id-1",
+    "at": "2026-07-16T00:00:24.000Z",
+    "event": "warrant.denied",
+    "principal": {
+      "kind": "agent",
+      "id": "warrant-agent-outbound"
+    },
+    "payload": {
+      "requestId": "id-8",
+      "reason": "human_rejected"
+    },
+    "hash": "e2723d26f15386ab475c5a8626137618f07ac834e7fba3860b4f67de055879ce"
+  }
+]

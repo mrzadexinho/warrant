@@ -1,0 +1,34 @@
+# Warrant
+
+> An agent's authority should be provable, not asserted.
+
+Warrant is a governance layer for AI agents: TypeScript libraries that enforce a deterministic
+policy at the moment an agent acts, and produce a signed, portable proof the action stayed
+inside the rules. It runs in-process, inside the operator's own systems. The gate is code, not
+another AI, so it cannot be prompt-talked into yes. The proof is an append-only, hash-chained
+ledger exportable as a DSSE-signed certificate a third party can verify without trusting the
+operator.
+
+## Instructions for AI agents
+
+- Start with README.md: verify the shipped production certificate first, then run the offline
+  demo (`pnpm demo`, no network, no database).
+- The invariants that must survive any change: docs/warrant-kernel-invariants.md. Do not
+  propose changes that violate them.
+- The beliefs behind the design: philosophy.md.
+- The contracts crossing project boundaries: docs/contracts/ (gate.md, ledger.md,
+  adapter-authors-guide.md, millwerk-warrant-seam.md, trajectory-attested.md).
+- Every error code a public API returns, with retry semantics: docs/error-codes.md.
+- The real signed evidence: packages/warrant-eve-outbound-demo/ceremony/ (ledger.json,
+  certificate.dsse.json, and a README stating exactly what the run proves and what it does
+  not).
+- Toolchain: Node 20+, pnpm 10+. Packages are consumed by cloning; they are not on npm yet.
+
+## Key entry points
+
+- @idriszade/warrant-authorize: requestAuthority (was this permitted)
+- @idriszade/warrant-guard: guardedExecute (did what executed stay inside what was permitted)
+- @idriszade/warrant-policy: evaluate (pure, deterministic, deny-by-default)
+- @idriszade/warrant-verify: chain replay, DSSE export and verification, the CLI
+- @idriszade/warrant-core: shared types, signing, canonicalJson (the single definition of
+  identity)

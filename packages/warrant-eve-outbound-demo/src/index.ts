@@ -1,0 +1,15 @@
+export { buildDeps, buildSendEmailTool, gtmBinding, InputSchema, OutputSchema } from './build.js';
+export type { EmailContent, DemoInput, EmailOutput } from './build.js';
+export { buildGovernedSendEmailTool } from './governed-send-email.js';
+export { isCeremonyEnabled, loadCeremonyConfig, DEMO_PRIVATE_KEY_HEX } from './config.js';
+export type { CeremonyConfig, Env } from './config.js';
+export { buildCeremonyRuntime } from './ceremony-deps.js';
+export type { CeremonyRuntime } from './ceremony-deps.js';
+export { buildSmtpSender, smtpTransportOptions } from './smtp-sender.js';
+export type { MailMessage, MailTransport, SmtpOptions } from './smtp-sender.js';
+export { assertLedgerAppendOnly } from './ceremony-preflight.js';
+export type { AppendOnlyProof } from './ceremony-preflight.js';
+export { runCeremonyPreflight, formatPreflightReport } from './ceremony-checks.js';
+export type { CeremonyPreflightReport, CheckResult, PreflightDeps } from './ceremony-checks.js';
+export { buildCeremonyModel } from './model.js';
+export type { CeremonyModelConfig } from './model.js';
