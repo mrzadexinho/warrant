@@ -151,6 +151,13 @@ Together they are an operating loop for agents whose actions have consequences, 
 [`docs/guides/human-attested-run.md`](docs/guides/human-attested-run.md) walks the whole loop
 on one machine.
 
+To see the loop composed into a working product, read
+[millwerk-gtm-vertical](https://github.com/mrzadexinho/millwerk-gtm-vertical): a complete,
+public GTM signal-monitoring vertical on these seams. It watches dev-tool companies for public
+buying signals, drafts outreach, routes every draft through the human gate, executes only what
+was approved into a file outbox or a self-hosted CRM, and replays six months of simulated
+operation over one unbroken chain.
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
