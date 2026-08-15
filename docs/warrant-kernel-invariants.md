@@ -22,9 +22,9 @@
 
 **Ledger events (11):** `warrant.requested` · `policy.evaluated` · `review.submitted` ·
 `review.decided` · `warrant.issued` · `warrant.denied` · `warrant.voided` · `action.executed` ·
-`action.outcome` · `operator.attested` · `trajectory.attested` (the one OPTIONAL event; contract
+`action.outcome` · `operator.attested` · `trajectory.attested` (the one optional event; contract
 in `docs/contracts/trajectory-attested.md`). Defined in the `LedgerEventType` type in
-`warrant-ledger/src/entry.ts`; the count is the enum's, not a hand-carried number.
+`warrant-ledger/src/entry.ts`.
 
 **Evaluation order is LOCKED** (`warrant-policy/src/evaluate.ts`): protected audiences → daily caps →
 first matching stake → default deny. Fail-closed at every step.
